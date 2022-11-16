@@ -1,0 +1,14 @@
+.thumb {
+  background-color: var(--btn-bcg-color);
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb > svg {
+  height: 70px;
+  width: 70px;
+}

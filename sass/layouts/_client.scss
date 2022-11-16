@@ -1,0 +1,28 @@
+.clients__list {
+  display: flex;
+  justify-content: center;
+}
+.client__item:not(:first-child) {
+  margin-left: 30px;
+}
+.client__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.client__link:hover svg,
+.client__link:focus svg {
+  fill: var(--accent-color);
+}

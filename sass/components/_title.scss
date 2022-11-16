@@ -1,0 +1,11 @@
+.feature__list .title,
+.team__list .title,
+.clients .title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
