@@ -51,6 +51,7 @@
   color: var(--primary-white-color);
   @include desktop {
     text-align: start;
+    margin-right: 0px;
   }
 }
 .join__social {
@@ -153,9 +154,6 @@
   @include tablet {
     margin-top: 0;
   }
-  @include desktop {
-    margin-left: 70px;
-  }
 }
 .firstcolumn {
   text-align: center;
@@ -164,9 +162,9 @@
     margin-left: 76px;
   }
   @include desktop {
-    margin-right: 0px;
+    margin-right: 85px;
     text-align: start;
-    margin-left: 200px;
+    margin-left: 0px;
   }
 }
 
