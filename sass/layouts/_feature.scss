@@ -1,4 +1,10 @@
 .feature__list {
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
   display: flex;
   justify-content: center;
 }

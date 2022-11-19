@@ -3,8 +3,15 @@
 }
 
 .team__list.list {
-  display: flex;
-  justify-content: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   background-color: var(--team-bcg-color);
 }
 .card__team {
@@ -12,12 +19,27 @@
   &:last-child {
     margin-right: 0px;
   }
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--primary-white-color);
   text-align: center;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 60px) / 2);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+  @include desktop {
+    width: calc((100% - 120px) / 4);
+    margin-bottom: 0px;
+  }
 }
 
 .team__name {
@@ -37,10 +59,16 @@
   justify-content: center;
   margin-top: 16px;
   margin-bottom: 30px;
+  padding-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
 }
 .social__item:not(:first-child) {
   margin-left: 10px;
 }
+
 .social__link {
   width: 44px;
   height: 44px;

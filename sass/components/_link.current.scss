@@ -8,3 +8,7 @@
   background-color: var(--accent-color);
   border-radius: 2px;
 }
+
+.mob-menu-list__link.link-current:hover {
+  color: var(--accent-color);
+}

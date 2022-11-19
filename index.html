@@ -19,13 +19,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container main__nav">
         <nav class="nav">
           <a class="logo" href="./index.html"><span>Web</span>Studio</a>
+          <button  class="open-nav" type="button" data-menu-open>
+          <svg width="24" height="16"><use href="./images/icons.svg#icon-nav-menu"></use></svg>
+          </button>
           <ul class="menu list">
             <li class="item">
               <a href="./index.html" class="link current">Студія</a>
@@ -55,71 +58,131 @@
           </li>
         </ul>
       </div>
-    </header>
-    <main>
-      <section class="hero">
+      <div class="mob-menu is-hidden" data-menu>
         <div class="container">
-          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button primary service" type="button" data-modal-open >
-            Замовити послугу
+          <div class="mob-menu-top">
+            <button  class="menu-close" type="button" data-menu-close>
+          <svg width="18" height="18"><use href="./images/icons.svg#icon-close-nav"></use></svg>
           </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-list__item">
+                <a
+                  class="mob-menu-list__link link-current"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a
+                  class="mob-menu-list__link link"
+                  href="#"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-connect">
+              <a class="mob-connect__tel link" href="tel:+380961111111">
+                +38 096 111 11 11</a>
+              <a class="mob-connect__mail link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a>
+            </div>
+            <ul class="mob-soc list">
+                  <li class="mob-soc__item">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" class="mob-soc__link link">
+                      Instagram
+                    </a>
+                  </li>
+                  <li class="mob-soc__item">
+                    <a href="https://www.twitter.com/" target="_blank" rel="noreferrer noopener" class="mob-soc__link link">
+                      Twitter
+                    </a>
+                  </li>
+                  <li class="mob-soc__item">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" class="mob-soc__link link">
+                      Facebook
+                    </a>
+                  </li>
+                  <li class="mob-soc__item">
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener" class="mob-soc__link link">
+                      Linkedin
+                    </a>
+                  </li>
+                </ul>
+          </div>
         </div>
-      </section>
-      <section class="advantage section">
-        <div class="container">
-          <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="advantage list">
-            <li class="item">
-              <div class="thumb">
-                <svg class="icon">
-                  <use href="./images/icons.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="advantage__title">Увага до деталей</h3>
-              <p class="text">
-                Ідейні міркування, і навіть початок повсякденної роботи з
-                формування позиції.
-              </p>
-            </li>
-            <li class="item">
-              <div class="thumb">
-                <svg class="icon">
-                  <use href="./images/icons.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="advantage__title">Пунктуальність</h3>
-              <p class="text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
-            </li>
-            <li class="item">
-              <div class="thumb">
-                <svg class="">
-                  <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="advantage__title">Планування</h3>
-              <p class="text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
-            </li>
-            <li class="item">
-              <div class="thumb">
-                <svg class="">
-                  <use href="./images/icons.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="advantage__title">Сучасні технології</h3>
-              <p class="text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="feature__list section no-padding">
+      </div>
+    </header>
+     <main>
+     <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+        <button class="button primary service" type="button" data-modal-open>
+          Замовити послугу
+        </button>
+      </div>
+    </section>
+    <section class="advantage section">
+      <div class="container">
+        <h2 class="visually-hidden">Наші переваги</h2>
+        <ul class="advantage list">
+          <li class="item">
+            <div class="thumb">
+              <svg class=" icon">
+                <use href="./images/icons.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <h3 class="advantage__title">Увага до деталей</h3>
+            <p class="advantage__text text">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="item">
+            <div class="thumb">
+              <svg class="icon">
+                <use href="./images/icons.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <h3 class="advantage__title">Пунктуальність</h3>
+            <p class="advantage__text text">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li class="item">
+            <div class="thumb">
+              <svg class="">
+                <use href="./images/icons.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <h3 class="advantage__title">Планування</h3>
+            <p class="advantage__text text">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="item">
+            <div class="thumb">
+              <svg class="">
+                <use href="./images/icons.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <h3 class="advantage__title">Сучасні технології</h3>
+            <p class="advantage__text text">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="feature__list section no-padding">
         <div class="container">
           <h2 class="feature__list title">Чим ми займаємося</h2>
           <ul class="feature__list list">
@@ -152,7 +215,31 @@
           <h2 class="team__list title">Наша команда</h2>
           <ul class="team__list list">
             <li class="card__team">
-              <img src="./images/team1.jpg" alt="чоловік" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team1.jpg    1x,
+                    ./images/team1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1-tab.jpg    1x,
+                    ./images/team1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team1-mob.jpg    1x,
+                    ./images/team1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team1-mob.jpg" alt="чоловік" width="450" />
+              </picture>
+              
               <div class="team__item">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p>Product Designer</p>
@@ -189,7 +276,30 @@
                 </div>
             </li>
             <li class="card__team">
-              <img src="./images/team2.jpg" alt="жінка" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team2.jpg    1x,
+                    ./images/team2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team2-tab.jpg    1x,
+                    ./images/team2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team2-mob.jpg    1x,
+                    ./images/team2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team2-mob.jpg" alt="жінка" width="450" />
+              </picture>
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p>Frontend Developer</p>
               <ul class="social list">
@@ -224,7 +334,30 @@
                 </ul>
             </li>
             <li class="card__team">
-              <img src="./images/team3.jpg" alt="чоловік" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team3.jpg    1x,
+                    ./images/team3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team3-tab.jpg    1x,
+                    ./images/team3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team3-mob.jpg    1x,
+                    ./images/team3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team3-mob.jpg" alt="чоловік" width="450" />
+              </picture>
               <h3 class="team__name">Микола Тарасов</h3>
               <p>Marketing</p><ul class="social list">
                   <li class="social__item">
@@ -258,7 +391,30 @@
                 </ul>
             </li>
             <li class="card__team">
-              <img src="./images/team4.jpg" alt="чоловік" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team4.jpg    1x,
+                    ./images/team4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team4-tab.jpg    1x,
+                    ./images/team4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team4-mob.jpg    1x,
+                    ./images/team4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/team4-mob.jpg" alt="чоловік" width="450" />
+              </picture>
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p>UI Designer</p>
               <ul class="social list">
@@ -343,7 +499,8 @@
     </main>
     <footer class="footer">
       <div class="container all__footer">
-      <div>
+        <div class="columns">
+      <div class="firstcolumn">
         <a class="logo__footer" href="./index.html"><span>Web</span>Studio</a>
         <address>
           <ul class="address__footer list">
@@ -401,7 +558,7 @@
                     </a>
                   </li>
                   </ul>
-        </div>
+        </div></div>
       <form class="signup">
         <label class="join">Підпишіться на розсилку
           <input
@@ -460,7 +617,8 @@
           <svg width="11" height="11"><use href="./images/icons.svg#icon-close"></use></svg>
           </button>
       </div>
-    </div>
+    </div> 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
