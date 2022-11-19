@@ -79,7 +79,7 @@
     @include font(500, 12px, 1.16, 0.02em);
     display: flex;
     flex-wrap: wrap;
-    margin-left: 96px;
+    margin-left: 35px;
   }
   @include desktop {
     display: flex;
@@ -130,15 +130,15 @@
     fill: var(--accent-color);
   }
 }
-.address .item + .item {
-  margin-left: 50px;
+@include tablet {
+  .address .mail {
+    margin-bottom: 5px;
+  }
 }
+
 .open-nav {
+  display: flex;
   margin-left: 284px;
-  @include tablet {
-  }
-  @include desktop {
-  }
   width: 40px;
   height: 40px;
   background: var(--primary-white-color);
@@ -146,6 +146,11 @@
   border: 1px solid transparent;
   &:hover {
     fill: var(--accent-color);
+  }
+}
+@media (min-width: 768px) {
+  .open-nav {
+    display: none;
   }
 }
 .mob-menu {
