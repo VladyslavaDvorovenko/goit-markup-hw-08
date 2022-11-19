@@ -12,7 +12,9 @@
     max-width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .main__nav {

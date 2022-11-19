@@ -121,7 +121,9 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1600px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -827,31 +829,24 @@ textarea {
 }
 
 .feature__list {
-  display: flex;
-  justify-content: center;
+  display: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .feature__list {
-    display: none;
+    display: flex;
+    justify-content: center;
   }
 }
-@media screen and (min-width: 768px) {
-  .feature__list {
-    display: none;
-  }
-}
-
-.feature__list .item {
+.feature__list .feature__list .item {
   margin-right: 30px;
 }
-.feature__list .item:last-child {
+.feature__list .feature__list .item:last-child {
   margin-right: 0px;
 }
-
-.feature__thumb {
+.feature__list .feature__thumb {
   position: relative;
 }
-.feature__thumb::after {
+.feature__list .feature__thumb::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -860,8 +855,7 @@ textarea {
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
 }
-
-.feature__text {
+.feature__list .feature__text {
   position: absolute;
   font-weight: 700;
   font-size: 14px;
