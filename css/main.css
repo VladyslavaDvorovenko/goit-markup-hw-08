@@ -676,6 +676,7 @@ textarea {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .mob-connect {
@@ -1101,6 +1102,7 @@ textarea {
   text-align: center;
   margin-right: 20px;
   color: var(--primary-white-color);
+  flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
   .join {
@@ -1154,7 +1156,7 @@ textarea {
 }
 
 .sign__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
