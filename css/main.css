@@ -237,6 +237,9 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: var(--primary-white-color);
+  fill: var(--black-logo-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close:hover, .close:focus {
@@ -340,13 +343,21 @@ textarea {
 }
 
 .label__policy {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-left: 36px;
+  margin-left: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .label__policy {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-left: 36px;
+  }
 }
 
 .checkbox {
@@ -362,13 +373,19 @@ textarea {
 
 .policy__icon {
   position: absolute;
-  left: 54px;
-  top: 415px;
+  left: 50px;
+  top: 437px;
   display: inline-block;
   border-radius: 2px;
   outline: 3px solid #212121;
   fill: var(--primary-white-color);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .policy__icon {
+    left: 54px;
+    top: 415px;
+  }
 }
 
 .checkbox:checked + .policy__icon {
@@ -488,6 +505,8 @@ textarea {
 
 .menu {
   display: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .menu {
@@ -548,17 +567,20 @@ textarea {
     letter-spacing: 0.02em;
     display: flex;
     flex-wrap: wrap;
-    margin-left: auto;
+    margin-left: 35px;
   }
 }
 @media screen and (min-width: 1200px) {
   .address {
     display: flex;
+    margin-left: auto;
   }
 }
 
-.address .item + .item {
-  margin-left: 40px;
+@media screen and (min-width: 1200px) {
+  .address .item + .item {
+    margin-left: 40px;
+  }
 }
 
 .address__icon {
