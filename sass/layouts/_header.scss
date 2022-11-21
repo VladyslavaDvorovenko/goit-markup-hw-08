@@ -12,17 +12,10 @@
   font-family: Raleway, sans-serif;
   @include font(700, 26px, 1.19, null);
   text-decoration: none;
-  @include mobile {
-    padding-top: 16px;
-    padding-left: 15px;
-  }
   @include tablet {
-    padding-top: 26px;
     margin-right: 88px;
   }
   @include desktop {
-    padding-top: 24px;
-    margin-left: 215px;
     margin-right: 0px;
   }
 }
@@ -79,11 +72,14 @@
     @include font(500, 12px, 1.16, 0.02em);
     display: flex;
     flex-wrap: wrap;
-    margin-left: 35px;
+    margin-left: auto;
   }
   @include desktop {
     display: flex;
   }
+}
+.address .item + .item {
+  margin-left: 40px;
 }
 
 .address__icon {
@@ -133,6 +129,11 @@
 @include tablet {
   .address .mail {
     margin-bottom: 5px;
+  }
+}
+@include desktop {
+  .address .mail {
+    margin-bottom: 0px;
   }
 }
 
@@ -209,6 +210,8 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 32px;
+  list-style: none;
 }
 .mob-connect__mail {
   font-weight: 500;
@@ -216,6 +219,7 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  list-style: none;
 }
 
 .mob-soc {

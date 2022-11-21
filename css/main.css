@@ -111,7 +111,7 @@ svg {
 @media screen and (min-width: 320px) {
   .container {
     max-width: 480px;
-    margin-left: 0;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -168,9 +168,18 @@ svg {
   margin-top: 0;
   margin-bottom: 30px;
   color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .feature__list .title,
+.team__list .title,
+.clients .title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .text {
@@ -461,22 +470,13 @@ textarea {
   line-height: 1.19;
   text-decoration: none;
 }
-@media screen and (min-width: 480px) {
-  .logo {
-    padding-top: 16px;
-    padding-left: 15px;
-  }
-}
 @media screen and (min-width: 768px) {
   .logo {
-    padding-top: 26px;
     margin-right: 88px;
   }
 }
 @media screen and (min-width: 1200px) {
   .logo {
-    padding-top: 24px;
-    margin-left: 215px;
     margin-right: 0px;
   }
 }
@@ -548,13 +548,17 @@ textarea {
     letter-spacing: 0.02em;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 35px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .address {
     display: flex;
   }
+}
+
+.address .item + .item {
+  margin-left: 40px;
 }
 
 .address__icon {
@@ -610,6 +614,11 @@ textarea {
 @media screen and (min-width: 768px) {
   .address .mail {
     margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address .mail {
+    margin-bottom: 0px;
   }
 }
 .open-nav {
@@ -690,6 +699,8 @@ textarea {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 32px;
+  list-style: none;
 }
 
 .mob-connect__mail {
@@ -698,6 +709,7 @@ textarea {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  list-style: none;
 }
 
 .mob-soc {
@@ -750,7 +762,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   }
 }
@@ -804,14 +816,17 @@ textarea {
 }
 
 .advantage .list .item {
+  margin-bottom: 30px;
   width: 100%;
 }
 .advantage .list .item:last-child {
   margin-right: 0px;
+  margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
   .advantage .list .item {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -829,13 +844,9 @@ textarea {
   line-height: 1.14;
   text-transform: uppercase;
 }
-
-.advantage__text {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
-  .advantage__text {
-    margin-bottom: 0;
+  .advantage__title {
+    text-align: start;
   }
 }
 
@@ -890,6 +901,7 @@ textarea {
   .team__list.list {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -900,7 +912,6 @@ textarea {
 }
 
 .card__team {
-  margin-right: 30px;
   margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -909,23 +920,17 @@ textarea {
   width: 100%;
 }
 .card__team:last-child {
-  margin-right: 0px;
-}
-.card__team:last-child {
   margin-bottom: 0px;
 }
 @media screen and (min-width: 768px) {
   .card__team {
     width: calc((100% - 60px) / 2);
-  }
-  .card__team:nth-last-child(-n+2) {
     margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .card__team {
     width: calc((100% - 120px) / 4);
-    margin-bottom: 0px;
   }
 }
 
@@ -1029,6 +1034,11 @@ textarea {
 }
 .client__link:hover, .client__link:focus {
   border: 1px solid var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: 226px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .client__link {
@@ -1152,6 +1162,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     margin-left: 94px;
+    margin-top: 0;
   }
 }
 
@@ -1163,7 +1174,6 @@ textarea {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--footer-bcg-color);
-  margin-right: 12px;
   margin-top: 20px;
   padding-left: 16px;
   padding-top: 15px;
@@ -1174,9 +1184,15 @@ textarea {
 .sign__input:hover {
   border: 1px solid var(--primary-white-color);
 }
+@media screen and (min-width: 768px) {
+  .sign__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .sign__input {
     width: 358px;
+    margin-right: 12px;
   }
 }
 
@@ -1215,6 +1231,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .all__footer {
     display: flex;
+    align-items: baseline;
   }
 }
 
@@ -1238,7 +1255,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .firstcolumn {
-    margin-right: 85px;
+    margin-right: 70px;
     text-align: start;
     margin-left: 0px;
   }

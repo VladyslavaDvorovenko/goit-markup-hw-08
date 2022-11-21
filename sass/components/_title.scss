@@ -3,9 +3,13 @@
 .clients .title {
   margin-top: 0;
   margin-bottom: 30px;
-
   color: var(--title-text-color);
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17px;
   text-align: center;
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }

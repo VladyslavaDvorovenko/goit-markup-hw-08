@@ -6,6 +6,7 @@
   @include tablet {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
   }
   @include desktop {
     display: flex;
@@ -15,10 +16,6 @@
   background-color: var(--team-bcg-color);
 }
 .card__team {
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0px;
-  }
   margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0px;
@@ -32,13 +29,10 @@
   width: 100%;
   @include tablet {
     width: calc((100% - 60px) / 2);
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0px;
-    }
+    margin-bottom: 0px;
   }
   @include desktop {
     width: calc((100% - 120px) / 4);
-    margin-bottom: 0px;
   }
 }
 

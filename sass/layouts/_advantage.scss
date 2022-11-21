@@ -13,12 +13,15 @@
 }
 .advantage .list .item {
   // flex-basis: calc((100% - 90px) / 4);
+  margin-bottom: 30px;
   &:last-child {
     margin-right: 0px;
+    margin-bottom: 0px;
   }
   width: 100%;
   @include tablet {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0;
   }
   @include desktop {
     width: calc((100% - 90px) / 4);
@@ -33,10 +36,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
-.advantage__text {
-  margin-bottom: 30px;
   @include tablet {
-    margin-bottom: 0;
+    text-align: start;
   }
 }
