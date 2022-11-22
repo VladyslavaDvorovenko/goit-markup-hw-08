@@ -6,6 +6,7 @@
 .nav {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .logo {
   color: var(--black-logo-color);
@@ -29,10 +30,6 @@
   margin-right: auto;
   @include tablet {
     display: flex;
-  }
-  @include desktop {
-    display: flex;
-    margin-left: 93px;
   }
 }
 .menu .item {
@@ -79,6 +76,7 @@
   @include desktop {
     display: flex;
     margin-left: auto;
+    width: 100%;
   }
 }
 .address .item + .item {
@@ -145,7 +143,7 @@
 .open-nav {
   display: flex;
   align-items: center;
-  margin-left: 200px;
+  margin-left: auto;
   width: 40px;
   height: 40px;
   background: var(--primary-white-color);
@@ -239,7 +237,7 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .mob-soc__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);

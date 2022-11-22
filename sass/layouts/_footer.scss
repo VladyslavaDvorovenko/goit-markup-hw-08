@@ -47,17 +47,14 @@
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   text-align: center;
-  margin-right: 20px;
+  margin-bottom: 20px;
   color: var(--primary-white-color);
-  flex-direction: column;
   @include desktop {
     text-align: start;
-    margin-right: 0px;
   }
 }
 .join__social {
   display: flex;
-  margin-top: 20px;
   justify-content: center;
   @include desktop {
     justify-content: start;
@@ -104,7 +101,6 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: var(--footer-bcg-color);
-  margin-top: 20px;
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -165,7 +161,6 @@
   text-align: center;
   @include tablet {
     margin-right: 165px;
-    margin-left: 76px;
   }
   @include desktop {
     margin-right: 70px;
@@ -177,5 +172,6 @@
 .columns {
   @include tablet {
     display: flex;
+    justify-content: center;
   }
 }
