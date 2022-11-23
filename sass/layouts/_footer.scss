@@ -111,6 +111,9 @@
   }
   @include tablet {
     width: 450px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
   @include desktop {
     width: 358px;
