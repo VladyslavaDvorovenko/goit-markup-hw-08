@@ -128,11 +128,10 @@ textarea {
   border-bottom: 1px solid #2196f3;
 }
 .label__policy {
-  @include font(null, 12px, 1.16, 0.03em);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  margin-left: 40px;
+  @include mobile {
+    @include font(null, 12px, 1.16, 0.03em);
+    margin-left: 35px;
+  }
   @include desktop {
     @include font(null, 14px, 1.71, 0.03em);
     margin-left: 36px;

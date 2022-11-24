@@ -62,7 +62,7 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--primary-text-color);
-  @include font(500, 14px, 1.14, 0.02em);
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -74,6 +74,7 @@
     margin-left: 35px;
   }
   @include desktop {
+    @include font(500, 14px, 1.14, 0.02em);
     display: flex;
     margin-left: auto;
     width: 100%;
@@ -90,21 +91,21 @@
   align-self: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @include desktop {
-    margin-right: 10px;
-  }
   @include tablet {
     margin-right: 8px;
   }
+  @include desktop {
+    margin-right: 10px;
+  }
 }
 .address__icon.mail {
-  @include desktop {
-    width: 16px;
-    height: 12px;
-  }
   @include tablet {
     width: 14px;
     height: 10px;
+  }
+  @include desktop {
+    width: 16px;
+    height: 12px;
   }
 
   .address .mail:hover &,
@@ -114,13 +115,13 @@
   }
 }
 .address__icon.tel {
-  @include desktop {
-    width: 10px;
-    height: 16px;
-  }
   @include tablet {
     width: 10px;
     height: 14px;
+  }
+  @include desktop {
+    width: 10px;
+    height: 16px;
   }
 
   .address .tel:hover &,
