@@ -27,7 +27,6 @@
 .menu {
   display: none;
   margin-left: auto;
-  margin-right: auto;
   @include tablet {
     display: flex;
   }
@@ -76,7 +75,7 @@
   @include desktop {
     @include font(500, 14px, 1.14, 0.02em);
     display: flex;
-    margin-left: auto;
+    justify-content: flex-end;
     width: 100%;
   }
 }
